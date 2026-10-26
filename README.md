@@ -1,56 +1,69 @@
-# Welcome to your Expo app 👋
+Macros: Calorie & Macro Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple mobile app for logging meals and tracking calories, protein, carbs and fat in one place. Built with React Native, TypeScript and Expo.
 
-## Get started
+Screenshots
+![Home screen](C:\Users\emmlo\Downloads\macros\assets\Home_page.jpeg)
+![All meals screen](C:\Users\emmlo\Downloads\macros\assets\All_meal_page_delete_meal_alert.jpeg)
+![Add meals screen](C:\Users\emmlo\Downloads\macros\assets\Add_meal_page.jpeg)
+![Successful meal added](C:\Users\emmlo\Downloads\macros\assets\Meal_add_success.jpeg)
 
-1. Install dependencies
+<p float="left">
+  <img src="assets/screenshots/home.png" width="250" />
+  <img src="assets/screenshots/add-meal.png" width="250" />
+  <img src="assets/screenshots/all-meals.png" width="250" />
+</p>
 
-   ```bash
-   npm install
-   ```
+Features
+Log meals: add a meal with its name, calories, protein, carbs and fat
+Macro overview: the home screen shows your calorie and macro totals at a glance
+Recent meals: see your latest entries on the home screen
+All meals: a full list of everything you've logged, with the option to delete a single meal or clear them all
+Share and copy: share or copy your meal summary
+Saved on your device: meals persist between sessions using local storage
+Input feedback: validation for missing fields and haptic feedback when a meal is added
+Tech Stack
+React Native with Expo
+TypeScript
+Expo Router for file-based navigation between screens
+AsyncStorage for on-device data persistence
+Expo Haptics for tactile feedback
+React Native Reanimated and Gesture Handler
+Getting Started
+Prerequisites
+Node.js (LTS recommended)
+The Expo Go app on your phone, or an Android emulator / iOS simulator
+Installation
+bash
+git clone https://github.com/EmmanuelLombe/Macros_Calorie-tracker.git
+cd Macros_Calorie-tracker
+npm install
+Run the app
+bash
+npx expo start
 
-2. Start the app
+Scan the QR code with Expo Go, or press a (Android), i (iOS) or w (web) in the terminal.
 
-   ```bash
-   npx expo start
-   ```
+Shortcuts:
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+bash
+npm run android
+npm run ios
+npm run web
+Project Structure
+<!-- TODO: check these folder names against your project and adjust -->
+.
+├── assets/            # Images, fonts and icons
+├── src/
+│   ├── app/           # Screens and routes (Home, All Meals, Add Meal)
+│   ├── components/    # Reusable UI (MacroGrid, RecentMeals, MealItem, buttons)
+│   ├── storage/       # Meal data functions (get, add, delete, clear) using AsyncStorage
+│   └── styles/        # Shared colours and global styles
+├── app.json           # Expo configuration
+├── package.json
+└── tsconfig.json
+What I Learned
+How the screens connect to each other and how navigation flows between them with Expo Router
+How to structure a project: screens, reusable components, storage logic and shared styles each live in their own place
+How to keep data in sync across screens by reloading it whenever a screen comes back into focus
+How to handle user input properly: validating fields, converting text to numbers, and giving clear feedback with alerts and haptics   
