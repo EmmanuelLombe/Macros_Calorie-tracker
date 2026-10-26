@@ -3,10 +3,10 @@ Macros: Calorie & Macro Tracker
 A simple mobile app for logging meals and tracking calories, protein, carbs and fat in one place. Built with React Native, TypeScript and Expo.
 
 Screenshots
-![Home screen](C:\Users\emmlo\Downloads\macros\assets\Home_page.jpeg)
-![All meals screen](C:\Users\emmlo\Downloads\macros\assets\All_meal_page_delete_meal_alert.jpeg)
-![Add meals screen](C:\Users\emmlo\Downloads\macros\assets\Add_meal_page.jpeg)
-![Successful meal added](C:\Users\emmlo\Downloads\macros\assets\Meal_add_success.jpeg)
+![Home screen](assets/Home_page.jpeg)
+![All meals screen](assets/All_meal_page_delete_meal_alert.jpeg)
+![Add meals screen](assets/Add_meal_page.jpeg)
+![Successful meal added](assets/Meal_add_success.jpeg)
 
 <p float="left">
   <img src="assets/screenshots/home.png" width="250" />
