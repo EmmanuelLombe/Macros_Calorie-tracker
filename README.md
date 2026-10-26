@@ -9,9 +9,10 @@ Screenshots
 ![Successful meal added](assets/Meal_add_success.jpeg)
 
 <p float="left">
-  <img src="assets/screenshots/home.png" width="250" />
-  <img src="assets/screenshots/add-meal.png" width="250" />
-  <img src="assets/screenshots/all-meals.png" width="250" />
+  <img src="assets/Home_page.jpeg" width="250" />
+  <img src="assets/All_meal_page_delete_meal_alert.jpeg" width="250" />
+  <img src="assets/Add_meal_page.jpeg" width="250" />
+  <img src="assets/Meal_add_success.jpeg" width="250" />
 </p>
 
 Features
