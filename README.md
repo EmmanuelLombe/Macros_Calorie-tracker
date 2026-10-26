@@ -50,18 +50,7 @@ bash
 npm run android
 npm run ios
 npm run web
-Project Structure
-<!-- TODO: check these folder names against your project and adjust -->
-.
-├── assets/            # Images, fonts and icons
-├── src/
-│   ├── app/           # Screens and routes (Home, All Meals, Add Meal)
-│   ├── components/    # Reusable UI (MacroGrid, RecentMeals, MealItem, buttons)
-│   ├── storage/       # Meal data functions (get, add, delete, clear) using AsyncStorage
-│   └── styles/        # Shared colours and global styles
-├── app.json           # Expo configuration
-├── package.json
-└── tsconfig.json
+
 What I Learned
 How the screens connect to each other and how navigation flows between them with Expo Router
 How to structure a project: screens, reusable components, storage logic and shared styles each live in their own place
